@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/svLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/skillsTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="top">
+
+                <TableRow
+                    android:id="@+id/rowAthletics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvAthletics"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/athletics"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <Spinner
+                    android:id="@+id/spAthletics"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/fateLadder"
+                    android:spinnerMode="dialog"/>
+
+                <Button
+                    android:id="@+id/btnAthletics"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roll" />
+
+                <TextView
+                    android:id="@+id/tvAthleticsResult"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Result"
+                    android:gravity="center"/>
+            </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowBurglary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvBurglary"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/burglary"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <Spinner
+                    android:id="@+id/spBurglary"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/fateLadder"
+                    android:spinnerMode="dialog"/>
+
+                <Button
+                    android:id="@+id/btnBurglary"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roll" />
+
+                <TextView
+                    android:id="@+id/tvBurglaryResult"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Result"
+                    android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowContacts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvContacts"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contacts"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spContacts"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnContacts"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvContactsResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowCrafts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvCrafts"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/crafts"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spCrafts"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnCrafts"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvCraftsResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowDeceive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvDeceive"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deceive"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spDeceive"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnDeceive"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvDeceiveResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowDrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvDrive"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drive"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spDrive"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnDrive"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvDriveResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowEmpathy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvEmpathy"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empathy"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spEmpathy"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnEmpathy"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvEmpathyResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowFight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvFight"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fight"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spFight"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnFight"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvFightResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowInvestigate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvInvestigate"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/investigate"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spInvestigate"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnInvestigate"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvInvestigateResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowLore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvLore"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lore"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spLore"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnLore"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvLoreResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowNotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvNotice"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/notice"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spNotice"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnNotice"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvNoticeResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowPhysique"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvPhysique"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/physique"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spPhysique"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnPhysique"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvPhysiqueResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowProvoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvProvoke"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/provoke"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spProvoke"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnProvoke"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvProvokeResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowRapport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvRapport"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rapport"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spRapport"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnRapport"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvRapportResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowResources"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvResources"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/resources"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spResources"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnResources"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvResourcesResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowShoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvShoot"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shoot"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spShoot"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnShoot"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvShootResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowStealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvStealth"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stealth"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spStealth"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnStealth"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvStealthResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowWill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tvWill"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/will"
+                        android:textStyle="bold"
+                        android:textSize="18dp"/>
+
+                    <Spinner
+                        android:id="@+id/spWill"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/fateLadder"
+                        android:spinnerMode="dialog"/>
+
+                    <Button
+                        android:id="@+id/btnWill"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll" />
+
+                    <TextView
+                        android:id="@+id/tvWillResult"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Result"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

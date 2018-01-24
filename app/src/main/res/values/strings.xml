@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FateApp</string>
+    <string name="title_activity_fragments">FragmentsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="rollDice">FATE DICE</string>
+    <string name="fateAccelerated">FATE Accelerated</string>
+    <string name="careful">Careful:</string>
+    <string name="clever">Clever:</string>
+    <string name="flashy">Flashy:</string>
+    <string name="forceful">Forceful:</string>
+    <string name="quick">Quick:</string>
+    <string name="sneaky">Sneaky:</string>
+    <string name="fate_core">FATE CORE</string>
+    <string name="athletics">Athletics:</string>
+    <string name="burglary">Burglary:</string>
+    <string name="contacts">Contacts:</string>
+    <string name="crafts">Crafts:</string>
+    <string name="deceive">Deceive:</string>
+    <string name="drive">Drive:</string>
+    <string name="empathy">Empathy:</string>
+    <string name="fight">Fight:</string>
+    <string name="investigate">Investigate:</string>
+    <string name="lore">Lore:</string>
+    <string name="notice">Notice:</string>
+    <string name="physique">Physique:</string>
+    <string name="provoke">Provoke:</string>
+    <string name="rapport">Rapport:</string>
+    <string name="resources">Resources:</string>
+    <string name="shoot">Shoot:</string>
+    <string name="stealth">Stealth:</string>
+    <string name="will">Will:</string>
+
+</resources>
